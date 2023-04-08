@@ -8,7 +8,7 @@ import Detail from "./Routes/Detail";
 import Contact from "./Routes/Contact";
 import Favs from "./Routes/Favs";
 import { useContextGlobal } from "./Components/utils/global.context";
-import logo from './images/DH.png'
+
 
 
 
