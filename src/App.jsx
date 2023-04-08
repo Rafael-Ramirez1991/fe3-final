@@ -8,6 +8,7 @@ import Detail from "./Routes/Detail";
 import Contact from "./Routes/Contact";
 import Favs from "./Routes/Favs";
 import { useContextGlobal } from "./Components/utils/global.context";
+import logo from './images/DH.png'
 
 
 
@@ -19,6 +20,7 @@ function App() {
   const {themeState} = useContextGlobal()
 
   return (
+    
       <div className= {"App"}  style={{ width: '100vw', backgroundColor: themeState.bgColor, color: themeState.color}}>
           <Navbar/>
           <h1>Encontra una sonrisa nueva !</h1>
@@ -30,7 +32,7 @@ function App() {
           <Route path={routes.favs} element={<Favs/>}></Route>
           </Routes>
           
-          <Footer/>
+          <Footer />
       </div>
   );
 }

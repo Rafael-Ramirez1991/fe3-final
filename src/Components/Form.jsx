@@ -12,9 +12,12 @@ const Form = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
+
+    if(userName.lenght > 5 || userEmail.contain('@')){
+       alert("se agrego correctamente al usuario" `{${userName}}`);
+    }
     
-  // console.log(userName)
-  // console.log(userEmail)
+ 
 
   
   }
@@ -22,15 +25,15 @@ const Form = () => {
 
   return (
     <div>
-      <form onSubmit={ handleSubmit }>
-          <label value="name" >Nombre Completo</label>
-          <input type="text" name="name" placeholder="Ingresar Nombre Completo" 
+      <form onSubmit={ handleSubmit } className="form">
+          <label className="label" value="name" >Nombre Completo</label>
+          <input className="input" type="text" name="name" placeholder="Ingresar Nombre Completo" 
           onChange={(e)=> {setUserName(e.target.value)}}/>
-          <label value="email">Email</label>
-          <input type="email" name="email" placeholder="Ingresa el Email"
+          <label className="label" value="email">Email</label>
+          <input className="input" type="email" name="email" placeholder="Ingresa el Email"
           onChange={(e)=> {setUserEmail(e.target.value)}}/>
 
-          <button type="submit" >Ingresar</button>
+          <button type="submit" className="ingreso" >Ingresar</button>
       </form>
     </div>
   );

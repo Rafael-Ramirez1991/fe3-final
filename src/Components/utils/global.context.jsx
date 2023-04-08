@@ -7,7 +7,7 @@ export const ContextGlobal = createContext();
 const themes = {
   dark: {
       theme: true,
-      bgColor: 'black',
+      bgColor: '#333333',
       color: 'white'
   },
   light: {
